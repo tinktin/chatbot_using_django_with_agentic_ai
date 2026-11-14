@@ -362,6 +362,7 @@
     div.style.maxWidth="85%";
     div.innerText = text;
     messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
   }
   async function sendMessage(){
     const input = document.getElementById("chat-input");
@@ -401,7 +402,6 @@
       clearTimeout(typingTimeout);
       hideTyping();
       
-
      }
   }
 
